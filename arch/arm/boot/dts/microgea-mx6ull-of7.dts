@@ -14,7 +14,7 @@
 
 / {
 	model = "Engicam MicroGEA MX6ULL SOM Starterkit";
-    compatible = "fsl,imx6ull-14x14-evk", "fsl,imx6ull";
+	compatible = "fsl,imx6ull";
 
 	chosen {
 		stdout-path = &uart1;
@@ -173,7 +173,6 @@
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_gpmi_nand_1>;
 	status = "okay";
-	fsl,legacy-bch-geometry;
 	nand-on-flash-bbt;
 };
 
